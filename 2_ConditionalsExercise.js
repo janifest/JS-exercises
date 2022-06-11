@@ -65,6 +65,12 @@ function exercise1(num1) {
   return answer1;
 }
 
+console.log(exercise1(0));  //num1 is small
+console.log(exercise1(1));  //num1 is small
+console.log(exercise1(10)); //num1 is small
+console.log(exercise1(11)); //the value of num1 is 11...
+console.log(exercise1(100)); //the value of num1 is 100...
+
 // EXERCISE 2.
 // Write an if/else conditional statement that if given a number will assign
 // a string value of:
@@ -91,6 +97,12 @@ function exercise2(num2) {
   // --------------------------------------------
   return answer2;
 }
+
+console.log(exercise2(0)); //even
+console.log(exercise2(2)); //even
+console.log(exercise2(1)); //odd
+console.log(exercise2(53)); //odd
+console.log(exercise2(3)); //odd
 
 // EXERCISE 3.
 // Write an if/else if/else block such that if `num3` is positive, then
@@ -119,6 +131,12 @@ function exercise3(num3) {
   return answer3;
 }
 
+console.log(exercise3(0)); //zero
+console.log(exercise3(1)); //positive
+console.log(exercise3(200)); //positive
+console.log(exercise3(-1)); //negative
+console.log(exercise3(-50)); //negative
+
 // EXERCISE 4.
 // Write an if/else statement such that if `varA` and `varB` are strings or
 // numbers and they have equal values, then change the value of answer4 to
@@ -140,6 +158,12 @@ function exercise4(varA, varB) {
   // --------------------------------------------
   return answer4;
 }
+
+console.log(exercise4(0, "0")); //equal
+console.log(exercise4(3, "three")); //differ
+console.log(exercise4(6,6)); //equal
+console.log(exercise4("two", "two")); //equal
+console.log(exercise4("6",6)); //equal
 
 // EXERCISE 5.
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
@@ -172,6 +196,12 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   return answer6;
 }
+
+console.log(exercise6(2,2,4)); //true
+console.log(exercise6(1,2,4)); //false
+console.log(exercise6(3,3,3)); //false
+console.log(exercise6(5,6,6)); //false
+console.log(exercise6(200,200,350)); //true
 
 // EXERCISE 7.
 // Use a switch conditional statement with case clauses such that if `num7` is
@@ -209,6 +239,12 @@ function exercise7(num7) {
   return answer7;
 }
 
+console.log(exercise7(1)); //you won
+console.log(exercise7(7)); //you are lucky
+console.log(exercise7(101)); //welcome to coding 101
+console.log(exercise7(1000000)); //you are one in a million 
+console.log(exercise7(0)); //thanks for that
+
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
 // the values of amount1 and amount2 are between the values of
@@ -229,6 +265,12 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   return answer8;
 }
+
+console.log(exercise8(4,50,1,100)); //true
+console.log(exercise8(2,4,1,10)); //true
+console.log(exercise8(3,4,3,5)); //false
+console.log(exercise8(1,12,0,15)); //true
+console.log(exercise8(0,50,0,50)); //false
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
@@ -264,6 +306,14 @@ function exercise9(item) {
   return answer9;
 }
 
+console.log(exercise9(1)); //you won
+console.log(exercise9(7)); //you are lucky
+console.log(exercise9(101)); //welcome to coding 101
+console.log(exercise9(1000000)); //you are one in a million
+console.log(exercise9(0)); //thanks for that
+console.log(exercise9(true)); //...that was a boolean 
+console.log(exercise9("hello")); //...that was a string
+
 // EXERCISE 10.
 // This question is a modified version of a classic programming question
 // called "Fizz Buzz"
@@ -298,6 +348,12 @@ function exercise10(num10) {
   // --------------------------------------------
   return answer10;
 }
+
+console.log(exercise10(3)); //fizz
+console.log(exercise10(5)); //buzz
+console.log(exercise10(15)); //fizz buzz
+console.log(exercise10(0)); //fizz buzz
+console.log(exercise10(45)); //fizz buzz
 
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
