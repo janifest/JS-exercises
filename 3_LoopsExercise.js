@@ -12,7 +12,7 @@
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 let i = 1;
-while (i < 6) {   //stopping at 6 so that the loop includes 5
+while (i <= 5) {   //stopping at 6 so that the loop includes 5
   console.log(i);
   i++;
 }
@@ -23,12 +23,12 @@ let j = 1;
 do {
   console.log(j);
   j++;
-} while (j < 6)
+} while (j <= 5)
 
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
-for(let k = 1; k < 6; k++) {
+for(let k = 1; k <= 5; k++) {
   console.log(k);
 }
 
@@ -36,7 +36,7 @@ for(let k = 1; k < 6; k++) {
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 let n = 10;
-while (n > 0) {     //stopping at 0 so it includes 1
+while (n >= 1) {     //stopping at 0 so it includes 1
   console.log(n);
   n--;        //decrementing because we are counting down, otherwise it would be infinite
 }
@@ -45,9 +45,9 @@ let p = 10;
 do {
   console.log(p);
   p--;
-} while (p > 0)
+} while (p >= 1)
 
-for(let h = 10; h > 0; h--) {
+for(let h = 10; h >= 1; h--) {
   console.log(h);
 }
 
@@ -55,7 +55,7 @@ for(let h = 10; h > 0; h--) {
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
 let q = 7;
-while(q < 28) {     //stopping at 28 so it includes 27, can also write (q <= 27)
+while(q <= 27) {     //stopping at 28 so it includes 27, can also write (q <= 27)
   console.log(q);
   q++;
 }
@@ -64,9 +64,9 @@ let g = 7;
 do {
   console.log(g);
   g++;
-} while (g < 28)
+} while (g <= 27)
 
-for(let f = 7; f < 28; f++) {
+for(let f = 7; f <= 27; f++) {
   console.log(f);
 }
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
@@ -74,7 +74,7 @@ for(let f = 7; f < 28; f++) {
 // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
 let c = 0;
-while(c < 101) {
+while(c <= 100) {
   console.log(c);
   c += 10;        //incrementing by 10, different from above, which only incremented by 1
 }
@@ -83,9 +83,9 @@ let t = 0;
 do {
   console.log(t);
   t += 10;
-} while (t < 101)
+} while (t <= 100)
 
-for(let d = 0; d < 101; d += 10) {
+for(let d = 0; d <= 100; d += 10) {
   console.log(d);
 }
 
@@ -106,7 +106,7 @@ while (counterFour < 2) {
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
 // (your choice which type) that prints the integers from 0 to that number.
 let myFavorite = 33;
-for (let m = 0; m < myFavorite + 1; m++) {  //myFavorite + 1 = 34, so the loop will include 33
+for (let m = 0; m <= myFavorite; m++) {  //myFavorite + 1 = 34, so the loop will include 33 --> EDIT: removed the +1 and changed comparison operator to <=
   console.log(m);
 }
 
@@ -122,7 +122,7 @@ for (let m = 0; m < myFavorite + 1; m++) {  //myFavorite + 1 = 34, so the loop w
 // (Hint - use an if statement in your loop)
 
 let myFaveInteger = 66;
-for (let s = 0; s < 101; s++){
+for (let s = 0; s <= 100; s++){
   if(s === myFaveInteger){
     console.log(`${myFaveInteger} my favorite number!`)   //using string interpolation
   } else {
